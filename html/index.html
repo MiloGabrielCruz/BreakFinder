@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Milo Cruz">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="revised" content="26-05-2023">
+  <meta name="viewport" content="width=device-width">
+  <title>Airline Flight Booking Online!</title>
+  <link href="date.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+  <!-- sched -->
+  <div id="calendar">
+    <h1 id="monthtitle">Your Schedule</h1>
+    <div id="headings">
+      <div style="border-radius: 25px 8px 8px 8px">Time</div>
+      <div>MON</div>
+      <div>TUE</div>
+      <div>WED</div>
+      <div>THU</div>
+      <div style="border-radius: 8px 25px 8px 8px">FRI</div>
+    </div>
+    <div id="row1">
+      <div onclick="saveDate(this.id)" id="d1">7:30 - 8:15 AM</div>
+      <div onclick="saveDate(this.id)" id="d2" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d3" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d4"></div>
+      <div onclick="saveDate(this.id)" id="d5" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d6" class = "clickable"></div>
+    </div>
+
+    <div id="row2">
+      <div onclick="saveDate(this.id)" id="d7">8:15 - 9:00 AM</div>
+      <div onclick="saveDate(this.id)" id="d8" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d9" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d10"></div>
+      <div onclick="saveDate(this.id)" id="d11" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d12" class = "clickable"></div>
+    </div>
+
+    <div id="row3">
+      <div onclick="saveDate(this.id)" id="d13">9:10 - 9:55 AM</div>
+      <div onclick="saveDate(this.id)" id="d14" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d15" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d16"></div>
+      <div onclick="saveDate(this.id)" id="d17" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d18" class = "clickable"></div>
+    </div>
+
+    <div id="row4">
+      <div onclick="saveDate(this.id)" id="d19">9:55 - 10:40 AM</div>
+      <div onclick="saveDate(this.id)" id="d20" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d21" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d22"></div>
+      <div onclick="saveDate(this.id)" id="d23" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d24" class = "clickable"></div>
+    </div>
+
+    <div id="row5">
+      <div onclick="saveDate(this.id)" id="d25">10:40 - 11:25 AM</div>
+      <div onclick="saveDate(this.id)" id="d26" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d27" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d28"></div>
+      <div onclick="saveDate(this.id)" id="d29" class = "clickable"></div>
+      <div  onclick="saveDate(this.id)" id="d30" class = "clickable"></div>
+    </div>
+
+    <div id="row6">
+      <div onclick="saveDate(this.id)" id="d31">11:25 - 12:10 AM</div>
+      <div onclick="saveDate(this.id)" id="d32" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d33" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d34"></div>
+      <div onclick="saveDate(this.id)" id="d35" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d36" class = "clickable"></div>
+    </div>
+
+    <div id="row7">
+      <div onclick="saveDate(this.id)" id="d37">12: 20 - 1:05 PM</div>
+      <div onclick="saveDate(this.id)" id="d38" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d39" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d40"></div>
+      <div onclick="saveDate(this.id)" id="d41" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d42" class = "clickable"></div>
+    </div>
+
+    <div id="row8">
+      <div onclick="saveDate(this.id)" id="d43">1:05 - 1:50 PM</div>
+      <div onclick="saveDate(this.id)" id="d44" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d45" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d46"></div>
+      <div onclick="saveDate(this.id)" id="d47" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d48" class = "clickable"></div>
+    </div>
+
+    <div id="row9">
+      <div onclick="saveDate(this.id)" id="d49">1:50 - 2:45 PM</div>
+      <div onclick="saveDate(this.id)" id="d50" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d51" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d52"></div>
+      <div onclick="saveDate(this.id)" id="d53" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d54" class = "clickable"></div>
+    </div>
+
+    <div id="row10">
+      <div onclick="saveDate(this.id)" id="d55" style="border-radius: 3px 3px 3px 25px">2:45 - 3:30 PM</div>
+      <div onclick="saveDate(this.id)" id="d56" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d57" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d58"></div>
+      <div onclick="saveDate(this.id)" id="d59" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="d60" style="border-radius: 3px 3px 25px 3px"  class = "clickable"></div>
+    </div>
+  </div>
+
+  <!-- sched2 -->
+  <div id="calendar2">
+    <h1 id="monthtitle">Final Schedule</h1>
+    <div id="headings">
+      <div style="border-radius: 25px 8px 8px 8px">Time</div>
+      <div>MON</div>
+      <div>TUE</div>
+      <div>WED</div>
+      <div>THU</div>
+      <div style="border-radius: 8px 25px 8px 8px">FRI</div>
+    </div>
+
+    <div id="row1">
+      <div onclick="saveDate(this.id)" id="k1">7:30 - 8:15 AM</div>
+      <div onclick="saveDate(this.id)" id="k2" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k3" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k4"></div>
+      <div onclick="saveDate(this.id)" id="k5" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k6" class = "clickable"></div>
+    </div>
+
+    <div id="row2">
+      <div onclick="saveDate(this.id)" id="k7">8:15 - 9:00 AM</div>
+      <div onclick="saveDate(this.id)" id="k8" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k9" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k10"></div>
+      <div onclick="saveDate(this.id)" id="k11" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k12" class = "clickable"></div>
+    </div>
+
+    <div id="row3">
+      <div onclick="saveDate(this.id)" id="k13">9:10 - 9:55 AM</div>
+      <div onclick="saveDate(this.id)" id="k14" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k15" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k16"></div>
+      <div onclick="saveDate(this.id)" id="k17" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k18" class = "clickable"></div>
+    </div>
+
+    <div id="row4">
+      <div onclick="saveDate(this.id)" id="k19">9:55 - 10:40 AM</div>
+      <div onclick="saveDate(this.id)" id="k20" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k21" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k22"></div>
+      <div onclick="saveDate(this.id)" id="k23" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k24" class = "clickable"></div>
+    </div>
+
+    <div id="row5">
+      <div onclick="saveDate(this.id)" id="k25">10:40 - 11:25 AM</div>
+      <div onclick="saveDate(this.id)" id="k26" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k27" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k28"></div>
+      <div onclick="saveDate(this.id)" id="k29" class = "clickable"></div>
+      <div  onclick="saveDate(this.id)" id="k30" class = "clickable"></div>
+    </div>
+
+    <div id="row6">
+      <div onclick="saveDate(this.id)" id="k31">11:25 - 12:10 AM</div>
+      <div onclick="saveDate(this.id)" id="k32" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k33" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k34"></div>
+      <div onclick="saveDate(this.id)" id="k35" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k36" class = "clickable"></div>
+    </div>
+
+    <div id="row7">
+      <div onclick="saveDate(this.id)" id="k37">12: 20 - 1:05 PM</div>
+      <div onclick="saveDate(this.id)" id="k38" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k39" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k40"></div>
+      <div onclick="saveDate(this.id)" id="k41" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k42" class = "clickable"></div>
+    </div>
+
+    <div id="row8">
+      <div onclick="saveDate(this.id)" id="k43">1:05 - 1:50 PM</div>
+      <div onclick="saveDate(this.id)" id="k44" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k45" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k46"></div>
+      <div onclick="saveDate(this.id)" id="k47" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k48" class = "clickable"></div>
+    </div>
+
+    <div id="row9">
+      <div onclick="saveDate(this.id)" id="k49">1:50 - 2:45 PM</div>
+      <div onclick="saveDate(this.id)" id="k50" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k51" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k52"></div>
+      <div onclick="saveDate(this.id)" id="k53" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k54" class = "clickable"></div>
+    </div>
+
+    <div id="row10">
+      <div onclick="saveDate(this.id)" id="k55" style="border-radius: 3px 3px 3px 25px">2:45 - 3:30 PM</div>
+      <div onclick="saveDate(this.id)" id="k56" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k57" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k58"></div>
+      <div onclick="saveDate(this.id)" id="k59" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="k60" style="border-radius: 3px 3px 25px 3px" class = "clickable"></div>
+    </div>
+    <form method="post" id = "enterName" method = "post">
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+      <input type="submit" onclick="submitName()" value="Submit">
+    </form>
+  </div>
+  </section>
+
+  <div id="submitData" onclick="calcData()">ADD</div>
+
+  <div id="calendarTotal">
+    <h1 id="monthtitle">Their Schedule</h1>
+    <div id="headings">
+      <div style="border-radius: 25px 8px 8px 8px">Time</div>
+      <div>MON</div>
+      <div>TUE</div>
+      <div>WED</div>
+      <div>THU</div>
+      <div style="border-radius: 8px 25px 8px 8px">FRI</div>
+    </div>
+
+    <div id="row1">
+      <div onclick="saveDate(this.id)" id="s1">7:30 - 8:15 AM</div>
+      <div onclick="saveDate(this.id)" id="s2" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s3" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s4"></div>
+      <div onclick="saveDate(this.id)" id="s5" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s6" class = "clickable"></div>
+    </div>
+
+    <div id="row2">
+      <div onclick="saveDate(this.id)" id="s7">8:15 - 9:00 AM</div>
+      <div onclick="saveDate(this.id)" id="s8" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s9" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s10"></div>
+      <div onclick="saveDate(this.id)" id="s11" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s12" class = "clickable"></div>
+    </div>
+
+    <div id="row3">
+      <div onclick="saveDate(this.id)" id="s13">9:10 - 9:55 AM</div>
+      <div onclick="saveDate(this.id)" id="s14" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s15" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s16"></div>
+      <div onclick="saveDate(this.id)" id="s17" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s18" class = "clickable"></div>
+    </div>
+
+    <div id="row4">
+      <div onclick="saveDate(this.id)" id="s19">9:55 - 10:40 AM</div>
+      <div onclick="saveDate(this.id)" id="s20" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s21" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s22"></div>
+      <div onclick="saveDate(this.id)" id="s23" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s24" class = "clickable"></div>
+    </div>
+
+    <div id="row5">
+      <div onclick="saveDate(this.id)" id="s25">10:40 - 11:25 AM</div>
+      <div onclick="saveDate(this.id)" id="s26" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s27" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s28"></div>
+      <div onclick="saveDate(this.id)" id="s29" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s30" class = "clickable"></div>
+    </div>
+
+    <div id="row6">
+      <div onclick="saveDate(this.id)" id="s31">11:25 - 12:10 AM</div>
+      <div onclick="saveDate(this.id)" id="s32" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s33" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s34"></div>
+      <div onclick="saveDate(this.id)" id="s35" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s36" class = "clickable"></div>
+    </div>
+
+    <div id="row7">
+      <div onclick="saveDate(this.id)" id="s37">12: 20 - 1:05 PM</div>
+      <div onclick="saveDate(this.id)" id="s38" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s39" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s40"></div>
+      <div onclick="saveDate(this.id)" id="s41" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s42" class = "clickable"></div>
+    </div>
+
+    <div id="row8">
+      <div onclick="saveDate(this.id)" id="s43">1:05 - 1:50 PM</div>
+      <div onclick="saveDate(this.id)" id="s44" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s45" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s46"></div>
+      <div onclick="saveDate(this.id)" id="s47" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s48" class = "clickable"></div>
+    </div>
+
+    <div id="row9">
+      <div onclick="saveDate(this.id)" id="s49">1:50 - 2:45 PM</div>
+      <div onclick="saveDate(this.id)" id="s50" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s51" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s52"></div>
+      <div onclick="saveDate(this.id)" id="s53" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s54" class = "clickable"></div>
+    </div>
+
+    <div id="row10">
+      <div onclick="saveDate(this.id)" id="s55" style="border-radius: 3px 3px 3px 25px">2:45 - 3:30 PM</div>
+      <div onclick="saveDate(this.id)" id="s56" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s57" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s58"></div>
+      <div onclick="saveDate(this.id)" id="s59" class = "clickable"></div>
+      <div onclick="saveDate(this.id)" id="s60" style="border-radius: 3px 3px 25px 3px" class = "clickable"></div>
+    </div>
+  </div>
+
+  <div id="contData" onclick="contData()">Continue</div>
+
+  <script src="date.js"></script>
+
+</body>
+
+</html>
