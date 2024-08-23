@@ -82,6 +82,7 @@ function calcData(){
       getElem(("s" + (index+1))).style.opacity = yourSchedArray[index].opacity;
       finalSchedArray[index].opacity = yourSchedArray[index].opacity;
       finalSchedArray[index].nameInside = yourSchedArray[index].nameInside;
+      getElem(("s" + (index+1))).textContent = finalSchedArray[index].nameInside;
       if(theirSchedArray[index].occupied == true){
         let y = parseFloat(window.getComputedStyle(getElem("d" + (index+1))).opacity);
         finalSchedArray[index].opacity = (y+0.2);
