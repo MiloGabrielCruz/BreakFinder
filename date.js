@@ -146,8 +146,9 @@ function contData(){
   console.log(finalSchedArray);
 }
 
-function submitName(){
-  event.preventDefault();
+function submitName(event){
+  event.preventDefault;
   const nameInput = document.getElementById('username').value;
   names.push(nameInput);
+  getElem(nameToBeAdded).textContent = "Name to be added: " + nameInput;
 }
