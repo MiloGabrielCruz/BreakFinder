@@ -147,8 +147,8 @@ function contData(){
 }
 
 function submitName(event){
-  event.preventDefault;
+  event.preventDefault();
   const nameInput = document.getElementById('username').value;
   names.push(nameInput);
-  getElem(nameToBeAdded).textContent = "Name to be added: " + nameInput;
+  getElem("nameToBeAdded").textContent = (names[(names.length)-1]);
 }

@@ -118,8 +118,6 @@
     </div>
   </div>
 
-  <div id="submitData" onclick="calcData()">ADD</div>
-
   <!-- sched2 -->
   <div id="calendar2">
     <h1 id="monthtitle">Their Schedule</h1>
@@ -221,12 +219,18 @@
       <div onclick="saveDate(this.id)" id="k59" class = "clickable"></div>
       <div onclick="saveDate(this.id)" id="k60" style="border-radius: 3px 3px 25px 3px" class = "clickable"></div>
     </div>
-    <form id = "enterName" method = "post">
+    <form method = "post" id = "enterName">
       <input type="text" id="username" name="username" placeholder="Enter name to be added">
       <button type = "submit" onclick="submitName(event)" id = "buttonSubmitName">SUBMIT</button>
     </form>
-    <div id = "nameToBeAdded">Name to be added: </div>
+    <nav> 
+    <div id = "nameToBeAddedIntro">Name to be added: </div>
+    <div id = "nameToBeAdded"> name </div> 
+    </nav>
+    
   </div>
+
+  <div id="submitData" onclick="calcData()">ADD</div>
 
   <div id="calendarTotal">
     <h1 id="monthtitle">Final Schedule</h1>

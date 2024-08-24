@@ -142,7 +142,7 @@ div {
   font-size: 15px;
 }
 
-#submitData, #contData, #username, #buttonSubmitName{
+#submitData, #contData, #username, #buttonSubmitName, #nameToBeAddedIntro, #nameToBeAdded{
   color: #222222;
   background-color: #FF903D;
   border-radius: 25px;
@@ -186,7 +186,7 @@ div {
   margin: auto;
 }
 
-#username {
+#username, #nameToBeAddedIntro {
   box-shadow: none;
   width: 200px;
   vertical-align: middle;
@@ -194,4 +194,18 @@ div {
 
 #username::placeholder {
   color: black;
+}
+
+#nameToBeAddedIntro, #nameToBeAdded {
+  vertical-align: top;
+  text-align: center;
+  color: black;
+  margin: 2%;
+  box-shadow: none;
+}
+
+nav {
+  display: flex;
+  width: max-content;
+  margin:auto;
 }
